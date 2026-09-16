@@ -1,0 +1,559 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رؤية جميع المواهب</title>
+
+    <!-- روابط CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/bw-modelica-ss01" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+
+    <!-- ملف التنسيق الأساسي -->
+    <link href="./css/main.css" rel="stylesheet" />
+
+    <!-- ملف التنسيق العربي -->
+    <link href="./css/main-arbic.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div id="sidebar" class="custom-sidebar col-3 d-xxl-flex flex-column col-xxl-2 sidebar-box p-0 pb-2">
+                <div class="side-icon text-center pt-3 pb-2">
+                    <img class="" src="./img/Group 144.svg" alt />
+                </div>
+
+
+                <div style="flex: 1" class="w-100 bo-r">
+                    <div class="d-flex flex-column justify-content-between p-4 h-100">
+                        <div>
+                            <div class="detalis d-flex gap-3 align-items-center mb-5">
+                                <div class="img-profile">
+                                    <img src="./img/FairyHubLogo_1.svg" alt />
+                                </div>
+                                <div class="full-name">
+                                    <span class="name d-block text-uppercase">فيري</span>
+                                    <span class="nickname d-block text-uppercase mb-2">هوب</span>
+                                    <span class="nickname d-block text-uppercase"><a class="text-primary"
+                                            href="#">شركة</a></span>
+                                </div>
+                            </div>
+
+                            <ul class="main-navigation">
+                                <li class="nav-item home active">
+                                    <a class="d-flex gap-3" href="arabic-home.html">
+                                        <span class="icon">
+                                            <img src="./img/Home.svg" alt="">
+                                        </span>
+                                        <span class="text">الصفحه الرئيسيه</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item profile">
+                                    <a class="d-flex gap-3" href="./profile_arabic.html">
+                                        <span class="icon">
+                                            <img src="./img/Profile.svg " alt="">
+                                        </span>
+                                        <span class="text">الملف الشخصي</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item create">
+                                    <a class="d-flex gap-3" href="./003_create_Job_Form_Arabic.html">
+                                        <span class="icon">
+                                            <img src="./img/Plus.svg " alt="">
+                                        </span>
+                                        <span class="text">انشاء</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item jobs-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Work.svg" alt="">
+                                        </span>
+                                        <span class="text">تاريخ الوظائف</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item contests-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/contests Hiatory.svg" alt="">
+                                        </span>
+                                        <span class="text">تاريخ المسابقات</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item requests">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Paper.svg " alt="">
+                                        </span>
+                                        <span class="text">الطلبات</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item rooms">
+                                    <a class="d-flex gap-3" href="./room_arabic.html">
+                                        <span class="icon">
+                                            <img src="./img/Chat.svg" alt="">
+                                        </span>
+                                        <span class="text">الغرف</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-footer d-flex justify-content-center flex-column">
+                            <div class="social-links d-flex justify-content-evenly mb-2">
+                                <a href="#" class="social-link facebook mr-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link twitter mr-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <p class="copyright-text text-center">
+                                © هيومناز.
+                                <span id="year"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button id="closeSidebar" class="close-sidebar-left mb-3 d-xxl-none">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+            </div>
+
+
+            <div class="col-12 col-xxl-10 p-0">
+                <!-- Start Navbar -->
+                <div class="navebar d-none d-lg-block pt-2">
+                    <div class="bo-b d-flex justify-content-between align-items-center gap-3">
+                        <h1 class="fs-6">
+                            <div class="search-input">
+                                <input type="text" placeholder="البحث..." />
+                                <span class="icon"><i class="fas fa-search"></i></span>
+                            </div>
+                        </h1>
+                        <ul class="d-flex gap-3 align-items-center">
+                            <li><a href="#">كيف تعمل</a></li>
+                            <li><a href="#">حول</a></li>
+                            <li><a href="#">الخصوصية</a></li>
+                            <li><a href="#">اتصل</a></li>
+                            <li>
+                                <img src="./img/Notification.svg" alt="">
+                            </li>
+                            <li class="d-flex align-items-center ">
+                                <img style="margin-inline-end: 10px;" src="./img/night-mode.svg" alt="">
+
+                                <div style="margin-inline-end: 10px;"
+                                    class="switch-color form-check form-switch form-check-reverse">
+                                    <input class="form-check-input theme-toggle" type="checkbox"
+                                        id="switchCheckReverse" />
+                                    <label class="form-check-label" for="switchCheckReverse"></label>
+                                </div>
+
+                                <img src="./img/sun.svg" alt="">
+
+
+                            </li>
+                            <li>
+                                <div class="dropdown-center">
+                                    <button id="languageBtn" class="btn d-flex align-items-center gap-2 dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img id="selectedFlag" src="./img/kuwait.svg" alt="">
+                                        <span id="selectedLang">عربي</span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="en" data-flag="us" href="./talents.html
+                                                "><span class="fi fi-us"></span>
+                                                English</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="fr" data-flag="fr" href="#"><span class="fi fi-fr"></span>
+                                                Français</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="de" data-flag="de" href="#"><span class="fi fi-de"></span>
+                                                Deutsch</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="tr" data-flag="tr" href="#"><span class="fi fi-tr"></span>
+                                                Türkçe</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="ar" data-flag="kw" href="talents-arabic.html"><img
+                                                    src="./img/kuwait.svg" alt="">
+                                                عربي
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none p-2 ">
+                    <div class="container-fluid">
+                        <div style="width: 80%;" class=" d-flex justify-content-between align-items-center ">
+                            <a href="#"> <img src="./img/Notification.svg" alt=""></a>
+                            <div class="d-flex gap-2">
+                                <img src="./img/night-mode.svg" alt="">
+
+                                <div style="margin-inline-end: 10px;"
+                                    class="switch-color form-check form-switch form-check-reverse">
+                                    <input class="form-check-input theme-toggle" type="checkbox"
+                                        id="switchCheckReverse" />
+                                    <label class="form-check-label" for="switchCheckReverse"></label>
+                                </div>
+
+                                <img src="./img/sun.svg" alt="">
+                            </div>
+                            <div class="dropdown-center">
+                                <button id="languageBtn" class="btn d-flex align-items-center gap-2 dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img id="selectedFlag" src="./img/kuwait.svg" alt="">
+                                    <span id="selectedLang">عربي</span></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="en" data-flag="us" href="#"><span class="fi fi-us"></span>
+                                            English</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="fr" data-flag="fr" href="#"><span class="fi fi-fr"></span>
+                                            Français</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="de" data-flag="de" href="#"><span class="fi fi-de"></span>
+                                            Deutsch</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="tr" data-flag="tr" href="#"><span class="fi fi-tr"></span>
+                                            Türkçe</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="ar" data-flag="kw" href="#"><img src="./img/kuwait.svg" alt="">
+                                            عربي
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                        </button>
+
+
+
+                        <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-flex justify-content-between mb-1">
+                                    <a href="#">كيف تعمل</a>
+                                    <a href="#">حول</a>
+                                    <a href="#">الخصوصية</a>
+                                    <a href="#">اتصل</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <h1 class="fs-6">
+                                        <div class="search-input">
+                                            <input type="text" placeholder="البحث" />
+                                            <span class="icon"><i class="fas fa-search"></i></span>
+                                        </div>
+                                    </h1>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Navbar -->
+                <div class="content">
+
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-12 col-xxl-11 talents p-xxl-5 pt-2 pb-2">
+                                <div class="container-fluid">
+                                    <div class="row mb-3">
+
+                                        <div class="col-12 mb-3">
+                                            <span style="margin-inline-start: 0;"
+                                                class="have-a-look d-block cursor text-black-50">ألق نظرة</span>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+                                            <h6 class="talents-title fw-bold">المواهب</h6>
+                                            <span class="talents-count">(10,000) المواهب</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <div
+                                                class="filters d-flex  align-items-center gap-3 justify-content-between flex-wrap">
+
+                                                <div class="align-self-end d-flex align-items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        viewBox="0 0 14 14">
+                                                        <path id="Path_4722" data-name="Path 4722"
+                                                            d="M5.484,5H18.178a.989.989,0,0,1,.6.627,1.021,1.021,0,0,1-.115.873L13.784,12v7L9.878,16V12L5,6.5a1.021,1.021,0,0,1-.115-.873A.989.989,0,0,1,5.484,5"
+                                                            transform="translate(-4.831 -5)" fill="#0d2229" />
+                                                    </svg>
+                                                    <span class="filter-label fw-bold">ترتيب حسب :</span>
+                                                </div>
+
+                                                <div class="form-group" style="flex: 1 1 200px; max-width: 391px;">
+                                                    <label for="nameFilter" class="mb-1">الاسم</label>
+                                                    <input type="text" id="nameFilter"
+                                                        class="form-control form-control-sm"
+                                                        placeholder="بحث بواسطة الاسم">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="genderSelect" class="mb-1">الجنس</label>
+                                                    <select id="genderSelect"
+                                                        class="form-select talnt form-select-sm fw-bold">
+
+                                                        <option value="male">رجل</option>
+                                                        <option value="female">أنثى</option>
+                                                        <option value="other">اخر</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="rateSelect" class="mb-1">السعر لكل ساعة</label>
+                                                    <select id="rateSelect"
+                                                        class="form-select talnt form-select-sm fw-bold">
+                                                        <option value=" 10-50">10–50 دينار كويتي</option>
+                                                        <option value="50-100">50-100 دينار كويتي</option>
+                                                        <option value="100+">أكثر من 100 دينار كويتي</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group d-flex flex-column">
+                                                    <label for="checkOnlyKids" class="mb-1">للأطفال فقط</label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input talnt" type="checkbox"
+                                                            id="checkOnlyKids">
+                                                        <label class="form-check-label" for="checkOnlyKids">حدد الأطفال
+                                                            فقط</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group ">
+                                                    <br class="mb-1">
+                                                    <button class="btn fw-bold text-white">تطبيق البحث</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+
+
+                                    <div class="row boxes flex-wrap">
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/1.jpg" alt="...">
+                                            </div>
+
+
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Yasmine Anwar</span>
+                                                    <i class="fa-solid fa-circle-check text-primary ms-2"></i>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/2.jpg" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Lara Morgan</span>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/3.jpg" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Mohammed Ahmed</span>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/4.jpg" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Suzi Ruben</span>
+                                                </h6>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/5.jpg" alt="...">
+                                            </div>
+
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Mona Abdelrahman</span>
+                                                    <i class="fa-solid fa-circle-check text-primary ms-2"></i>
+                                                </h6>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/6.jpg" alt="...">
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Sule Neuer</span>
+                                                    <i class="fa-solid fa-circle-check text-primary ms-2"></i>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/7.jpg" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Sarah Kevin</span>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/8.jpg" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Gorgena Stafan</span>
+                                                    <i class="fa-solid fa-circle-check text-primary ms-2"></i>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/9.jpg" alt="...">
+                                            </div>
+
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Kimmich Muller</span>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="talents-box">
+
+                                            <div class="carde mb-3">
+                                                <img src="./img/100.jpg" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h6 class="card-title fw-bolder mb-0">
+                                                    <span>Mohsen Salloum</span>
+                                                    <i class="fa-solid fa-circle-check text-primary ms-2"></i>
+                                                </h6>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Modal -->
+                                    <div class="image-modal" id="imageModal">
+                                        <img class="modal-content " id="modalImage">
+                                        <span class="close-btn" id="closeModal">إغلاق</span>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Sidebar-->
+    <button id="openSidebar" class="sidebar-left-open d-xxl-none" aria-controls="sidebar" aria-expanded="false">
+        <i class="fa fa-gear fa-spin"></i>
+    </button>
+
+    <!-- Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay d-none" aria-hidden="true"></div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/sidebar-box.js"></script>
+    <script type="text/javascript" src="./js/talentes.js"></script>
+</body>
+
+</html>

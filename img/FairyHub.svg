@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.251" height="24" viewBox="0 0 24.251 24">
+  <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="-7.168 -15.332 53.328 53.328">
+      <image preserveAspectRatio="xMidYMid slice" width="38.993" height="22.664" xlink:href="FairyHub-image.png"/>
+    </pattern>
+  </defs>
+  <g id="FairyHub" transform="translate(-1632.375 -369)">
+    <path id="Path_4745" data-name="Path 4745" d="M12.125,0A12.063,12.063,0,0,1,24.251,12,12.063,12.063,0,0,1,12.125,24,12.063,12.063,0,0,1,0,12,12.063,12.063,0,0,1,12.125,0Z" transform="translate(1632.375 369)" fill="#fff"/>
+    <rect id="FairyHubLogo_1" width="22.664" height="22.664" rx="11.332" transform="translate(1633.547 370.031)" fill="url(#pattern)"/>
+  </g>
+</svg>

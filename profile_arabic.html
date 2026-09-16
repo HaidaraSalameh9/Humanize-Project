@@ -1,0 +1,847 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الملف الشخصي</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <!-- ||| -->
+
+
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href="https://fonts.cdnfonts.com/css/bw-modelica-ss01" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/main-arbic.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div id="sidebar" class="custom-sidebar col-3 d-xxl-flex flex-column col-xxl-2 sidebar-box p-0 pb-2">
+                <div class="side-icon text-center pt-3 pb-2">
+                    <img class="" src="./img/Group 144.svg" alt />
+                </div>
+
+
+                <div style="flex: 1" class="w-100 bo-r">
+                    <div class="d-flex flex-column justify-content-between p-4 h-100">
+                        <div>
+                            <div class="detalis d-flex gap-3 align-items-center mb-5">
+                                <div class="img-profile">
+                                    <img src="./img/FairyHubLogo_1.svg" alt />
+                                </div>
+                                <div class="full-name">
+                                    <span class="name d-block text-uppercase">فاراي</span>
+                                    <span class="nickname d-block text-uppercase mb-2">هوب</span>
+                                    <span class="nickname d-block text-uppercase"><a class="text-primary"
+                                            href="#">شركة</a></span>
+                                </div>
+                            </div>
+
+                            <ul class="main-navigation">
+                                <li class="nav-item home">
+                                    <a class="d-flex gap-3" href="arabic-home.html">
+                                        <span class="icon">
+                                            <img src="./img/Iconly-Light-Home.svg " alt="">
+                                        </span>
+                                        <span class="text">الصفحة الرئيسة</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item profile active">
+                                    <a class="d-flex gap-3" href="./profile_arabic.html">
+                                        <span class="icon">
+                                            <img src="./img/Iconly-Light-Profile.svg" alt="">
+                                        </span>
+                                        <span class="text">الملف شخصي</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item create">
+                                    <a class="d-flex gap-3" href="./003_create_Job_Form_Arabic.html">
+                                        <span class="icon">
+                                            <img src="./img/Plus.svg " alt="">
+                                        </span>
+                                        <span class="text">إنشاء</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item jobs-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Work.svg" alt="">
+                                        </span>
+                                        <span class="text">تاريخ الوظائف</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item contests-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/contests Hiatory.svg" alt="">
+                                        </span>
+                                        <span class="text">تاريخ المسابقات</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item requests">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Paper.svg " alt="">
+                                        </span>
+                                        <span class="text">طلبات</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item rooms">
+                                    <a class="d-flex gap-3" href="./room_arabic.html">
+                                        <span class="icon">
+                                            <img src="./img/Chat.svg" alt="">
+                                        </span>
+                                        <span class="text">غرف</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-footer d-flex justify-content-center flex-column">
+                            <div class="social-links d-flex justify-content-evenly mb-2">
+                                <a href="#" class="social-link facebook mr-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link twitter mr-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <p class="copyright-text text-center">
+                                © هيومينايز.
+                                <span id="year"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button id="closeSidebar" class="close-sidebar-left mb-3 d-xxl-none">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+            </div>
+
+
+            <div class="col-12 col-xxl-10 p-0">
+                <!-- Start Navbar -->
+                <div class="navebar d-none d-lg-block pt-2">
+                    <div class="bo-b d-flex justify-content-between align-items-center gap-3">
+                        <h1 class="fs-6">
+                            <div class="search-input">
+                                <input type="text" placeholder="البحث ..." />
+                                <span class="icon"><i class="fas fa-search"></i></span>
+                            </div>
+                        </h1>
+                        <ul class="d-flex gap-3 align-items-center">
+                            <li><a href="#">كيف تعمل</a></li>
+                            <li><a href="#">حول</a></li>
+                            <li><a href="#">الخصوصية</a></li>
+                            <li><a href="#">اتصال</a></li>
+                            <li>
+                                <img src="./img/Notification.svg" alt="" />
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <img style="margin-inline-end: 10px" src="./img/night-mode.svg" alt="" />
+
+                                <div style="margin-inline-end: 10px"
+                                    class="switch-color form-check form-switch form-check-reverse">
+                                    <input class="form-check-input talnt theme-toggle" type="checkbox"
+                                        id="switchCheckReverse" />
+                                    <label class="form-check-label" for="switchCheckReverse"></label>
+                                </div>
+
+                                <img src="./img/sun.svg" alt="" />
+                            </li>
+                            <li>
+                                <div class="dropdown-center">
+                                    <button id="languageBtn" class="btn d-flex align-items-center gap-2 dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img id="selectedFlag" src="./img/kuwait.svg" alt="" />
+                                        <span id="selectedLang">عربي</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="en" data-flag="us" href="./profile.html
+                                                "><span class="fi fi-us"></span> English</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="fr" data-flag="fr" href="#"><span class="fi fi-fr"></span>
+                                                Français</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="de" data-flag="de" href="#"><span class="fi fi-de"></span>
+                                                Deutsch</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="tr" data-flag="tr" href="#"><span class="fi fi-tr"></span>
+                                                Türkçe</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="ar" data-flag="kw" href="profile_arabic.html"><img
+                                                    src="./img/kuwait.svg" alt="" />
+                                                عربي
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none p-2">
+                    <div class="container-fluid">
+                        <div style="width: 80%" class="d-flex justify-content-between align-items-center">
+                            <a href="#"> <img src="./img/Notification.svg" alt="" /></a>
+                            <div class="d-flex gap-2">
+                                <img src="./img/night-mode.svg" alt="" />
+
+                                <div style="margin-inline-end: 10px"
+                                    class="switch-color form-check form-switch form-check-reverse">
+                                    <input class="form-check-input theme-toggle" type="checkbox"
+                                        id="switchCheckReverse" />
+                                    <label class="form-check-label" for="switchCheckReverse"></label>
+                                </div>
+
+                                <img src="./img/sun.svg" alt="" />
+                            </div>
+                            <div class="dropdown-center">
+                                <button id="languageBtn" class="btn d-flex align-items-center gap-2 dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img id="selectedFlag" src="./img/kuwait.svg" alt="" />
+                                    <span id="selectedLang">عربي</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="en" data-flag="us" href="./profile.html
+                                            "><span class="fi fi-us"></span> English</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="fr" data-flag="fr" href="#"><span class="fi fi-fr"></span>
+                                            Français</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="de" data-flag="de" href="#"><span class="fi fi-de"></span>
+                                            Deutsch</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="tr" data-flag="tr" href="#"><span class="fi fi-tr"></span>
+                                            Türkçe</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="ar" data-flag="kw" href="profile_arabic.html"><img
+                                                src="./img/kuwait.svg" alt="" />
+                                            عربي
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-flex justify-content-between mb-1">
+                                    <a href="#">كيف تعمل</a>
+                                    <a href="#">حول</a>
+                                    <a href="#">الخصوصية</a>
+                                    <a href="#">اتصال</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <h1 class="fs-6">
+                                        <div class="search-input">
+                                            <input type="text" placeholder="اابحث ..." />
+                                            <span class="icon"><i class="fas fa-search"></i></span>
+                                        </div>
+                                    </h1>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Navbar -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-12 col-xl-11 col-xxl-10 pt-4 p-xxl-2 pb-2">
+                                <div class="UserProfileEdite row justify-content-around">
+                                    <div class="col-9">
+                                        <div class=" profile-edit p-3 m-auto pt-2">
+
+                                            <div class="official-registration tap mb-5 pb-5 mt-5">
+                                                <h2 class="fw-bold fs-4 mb-4">1 - التسجيل الرسمي</h2>
+                                                <form action="#">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-xxl-5">
+                                                            <div class="form-input mb-3">
+                                                                <label for="fullName" class="mb-1"><span>الاسم
+                                                                        الكامل</span></label>
+                                                                <input type="text" id="fullName"
+                                                                    class="form-control form-control-sm"
+                                                                    placeholder="اكتب اسمك">
+                                                            </div>
+                                                            <div class="form-input mb-3">
+                                                                <label for="profileName" class="mb-1"><span>اسم الملف
+                                                                        الشخصي</span></label>
+                                                                <input type="text" id="profileName"
+                                                                    class="form-control form-control-sm"
+                                                                    placeholder="اسم الملف الشخصي">
+                                                            </div>
+                                                            <div class="form-input mb-3">
+                                                                <label for="phoneNumber" class="mb-1"><span>رقم
+                                                                        الهاتف</span></label>
+                                                                <div class="d-flex gap-1 justify-content-between">
+                                                                    <div class="form-input phone-num-sle">
+                                                                        <select id="rateSelect"
+                                                                            class="form-select form-select-sm fw-bold">
+                                                                            <option value="+965">+965</option>
+                                                                            <option value="+963">+963</option>
+                                                                            <option value="+966">+966</option>
+                                                                            <option value="+971">+971</option>
+                                                                            <option value="+962">+962</option>
+                                                                            <option value="+964">+964</option>
+                                                                            <option value="+20">+20</option>
+                                                                            <option value="+961">+961</option>
+                                                                            <option value="+973">+973</option>
+                                                                            <option value="+968">+968</option>
+                                                                            <option value="+972">+972</option>
+                                                                            <option value="+90">+90</option>
+                                                                            <option value="+91">+91</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="phone-num">
+                                                                        <input type="text" id="phoneNumber"
+                                                                            class="form-control form-control-sm"
+                                                                            placeholder="0000 0000"
+                                                                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-input mb-3">
+                                                                <label for="emailAddress" class="mb-1"><span>عنوان
+                                                                        البريد الالكتروني</span></label>
+                                                                <input type="email" id="emailAddress"
+                                                                    class="form-control form-control-sm"
+                                                                    placeholder="عنوان البريد الالكتروني">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xxl-5">
+                                                            <div class="form-input mb-3">
+                                                                <label for="company"
+                                                                    class="mb-1"><span>الشركة</span></label>
+                                                                <input type="text" id="company"
+                                                                    class="form-control form-control-sm"
+                                                                    placeholder="الشركة">
+                                                            </div>
+                                                            <div class="form-input mb-3">
+                                                                <label for="website" class="mb-1"><span>موقع
+                                                                        الويب</span></label>
+                                                                <input type="url" id="website"
+                                                                    class="form-control form-control-sm"
+                                                                    placeholder="www.example.com">
+                                                            </div>
+                                                            <div class="form-input mb-1">
+                                                                <label for="addressSelect"
+                                                                    class="mb-1"><span>العنوان</span></label>
+                                                                <select id="addressSelect"
+                                                                    class="form-select form-select-sm fw-bold w-100">
+                                                                    <option value="Kuwait">الكويت</option>
+                                                                    <option value="Syria">سوريا</option>
+                                                                    <option value="KSA">المملكة العربية السعودية
+                                                                    </option>
+                                                                    <option value="Lebanon">لبنان</option>
+                                                                    <option value="Qatar">قطر</option>
+                                                                    <option value="Iraq">العراق</option>
+                                                                    <option value="Jordan">الأردن</option>
+                                                                    <option value="Emirates">الإمارات</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-input mb-3">
+                                                                <textarea style="height: 84px;"
+                                                                    class="form-control address" rows="3"
+                                                                    placeholder="العنوان"></textarea>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <button id="prev-btn" class="tap-btn">عودة</button>
+                                                                <button id="next-btn" class="tap-btn">التالي</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                            <div class="hiring  tap d-none disabled-icon mb-5 pb-5 mt-5">
+
+                                                <h2 class="fw-bold fs-4 mb-4">2 - توظيف</h2>
+                                                <div class="row justify-content-between">
+                                                    <div class="col-xxl-5">
+
+                                                        <div class="form-input one mb-5">
+                                                            <label for="nameFilter" class="mb-1">
+                                                                <span>
+                                                                    ما نوع الإنتاج الذي تود أن يظهر فيه الموهبة؟
+                                                                </span>
+                                                                <span class="ms-3"><img src="./img/star.svg"
+                                                                        alt=""></span>
+                                                            </label>
+                                                            <div class="form-check one">
+                                                                <input class="form-check-input ms-2" type="checkbox">
+                                                                <label class="form-check-label ">تحديد الكل</label>
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <span class="tag">تصوير الفيديو</span>
+                                                                <span class="tag">تصوير الفوتوغرافي</span>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-xxl-5">
+                                                        <div class="form-input two mb-4">
+                                                            <label for="nameFilter" class="mb-1">
+                                                                <span>
+                                                                    ما المجالات التي تود أن يشارك فيها الموهبة؟
+                                                                </span>
+                                                                <span class="ms-3"><img src="./img/star.svg"
+                                                                        alt=""></span>
+                                                            </label>
+                                                            <div class="form-check one">
+                                                                <input class="form-check-input ms-2" type="checkbox">
+                                                                <label class="form-check-label ">تحديد الكل</label>
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <span class="tag">مجموعة</span>
+                                                                <span class="tag">الرقص</span>
+                                                                <span class="tag">موضة</span>
+                                                                <span class="tag">أيدي</span>
+                                                                <span class="tag">صور</span>
+                                                                <span class="tag">أحذية</span>
+                                                                <span class="tag">رياضة</span>
+                                                                <span class="tag">بدل السباحة</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-between">
+                                                            <button id="prev-btn" class="tap-btn">عودة</button>
+                                                            <button id="next-btn" class="tap-btn">التالي</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="profil tap d-none disabled-icon mb-5 pb-5 mt-5">
+                                                <h2 class="fw-bold fs-4 mb-4">3 - ملف شخصي</h2>
+
+                                                <div class="row justify-content-between">
+                                                    <div class="col-xxl-5">
+                                                        <div
+                                                            class="upload-card d-flex align-items-center gap-3 flex-column">
+                                                            <img class="" id="preview" src="./img/FairyHubLogo_1.png"
+                                                                alt="Profile Preview">
+                                                            <div class="upload-content p-2 text-center">
+
+
+                                                                <h2 class="fs-5 mb-2 fw-bold">اختر صورة الملف الشخصي
+                                                                </h2>
+                                                                <p class="fs-6">تُستخدم صورتك الشخصية كأيقونة لك،
+                                                                    ولتمثيلك.
+                                                                </p>
+
+                                                                <div class="d-flex justify-content-center">
+                                                                    <label class="upload-btn text-center">
+                                                                        <img src="./img/Upload.svg" alt="">
+                                                                        تحميل صورة
+                                                                        <input type="file" id="fileInput"
+                                                                            accept="image/*" />
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xxl-5">
+                                                        <div class="form-input mb-3">
+                                                            <label for="nameFilter" class="mb-1">
+                                                                <span>
+                                                                    رؤية الملف الشخصي
+                                                                </span>
+                                                                <span class="ms-3"><img src="./img/star.svg"
+                                                                        alt=""></span>
+                                                            </label>
+
+                                                            <div class="d-flex gap-4">
+                                                                <div
+                                                                    class="form-check d-flex align-items-center  gap-2">
+                                                                    <input type="radio" name="hide" id="hideYes"
+                                                                        value="true">
+                                                                    <label for="hideYes">عام</label>
+                                                                </div>
+                                                                <div class="form-check d-flex align-items-center gap-2">
+                                                                    <input type="radio" name="hide" id="hideNo"
+                                                                        value="false">
+                                                                    <label for="hideNo">خاص</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <button id="prev-btn" class="tap-btn">عودة</button>
+                                                            <button id="next-btn" class="tap-btn">التالي</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="verification-of-id tap d-none disabled-icon mb-5 pb-5 mt-5">
+                                                <h2 class="fw-bold fs-4 mb-4">4 - تحقق من الهوية</h2>
+                                                <div class="row">
+                                                    <div class="col-xxl-5">
+                                                        <div class="row file-carde d-flex justify-content-between p-3">
+                                                            <div
+                                                                class=" col-sm-4 one d-flex justify-content-between flex-column mb-3">
+                                                                <div
+                                                                    class="file-icone d-flex align-items-center justify-content-center mb-2">
+                                                                    <img src="./img/Document-1.svg" alt="file icon"
+                                                                        id="filePreviewe" />
+                                                                </div>
+                                                                <div>
+                                                                    <input type="file" id="fileInpute"
+                                                                        accept="image/*" />
+                                                                    <div class="d-flex justify-content-center"
+                                                                        onclick="document.getElementById('fileInpute').click()">
+                                                                        <label
+                                                                            class="upload-btn-2 d-flex align-items-center justify-content-center gap-2">
+                                                                            <img src="./img/Upload-2.svg" alt="" />
+                                                                            <span> رفع</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div
+                                                                class=" col-sm-7 filee-details d-flex justify-content-between flex-column">
+                                                                <div class="mb-3">
+                                                                    <h4>تحميل الشركة</h4>
+                                                                    <h4 class="mb-2">نسخة الترخيص</h4>
+                                                                    <p class="filenames" id="filenames">لا يوجد ملف
+                                                                        مختار
+                                                                    </p>
+                                                                </div>
+                                                                <div class="filee-actions">
+                                                                    <button class="view-btns" id="viewBtne"
+                                                                        onclick="viewFile()" disabled><img
+                                                                            src="./img/Show.svg" alt="" /> عرض</button>
+                                                                    <button class="delete-btns" id="deleteBtne"
+                                                                        onclick="deleteFile()" disabled><img
+                                                                            src="./img/Delete.svg" alt="" />
+                                                                        حذف</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- modale -->
+                                                <div id="filemodale" class="modale">
+                                                    <span class="close" onclick="closemodale()">&times;</span>
+                                                    <img class="modale-content" id="modaleImage" />
+                                                </div>
+
+                                                <div class="row justify-content-between">
+                                                    <div class="col-xxl-5">
+                                                        <div class="form-input mb-1">
+                                                            <label for="addressSelect"
+                                                                class="mb-1"><span>العنوان</span></label>
+                                                            <select id="addressSelect"
+                                                                class="form-select form-select-sm fw-bold w-100">
+                                                                <option value="Kuwait">الكويت</option>
+                                                                <option value="Syria">سوريا</option>
+                                                                <option value="KSA">المملكة العربية السعودية</option>
+                                                                <option value="Lebanon">لبنان</option>
+                                                                <option value="Qatar">قطر</option>
+                                                                <option value="Iraq">العراق</option>
+                                                                <option value="Jordan">الأردن</option>
+                                                                <option value="Emirates">الإمارات</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-input mb-3">
+                                                            <label for="bankName" class="mb-1"><span>اسم
+                                                                    البنك</span></label>
+                                                            <input type="text" id="bankName"
+                                                                class="form-control form-control-sm"
+                                                                placeholder="اسم البنك">
+                                                        </div>
+
+                                                        <div class="form-input mb-3">
+                                                            <label for="bankAddres" class="mb-1"><span>عنوان
+                                                                    البنك</span></label>
+                                                            <input type="text" id="bankAddres"
+                                                                class="form-control form-control-sm"
+                                                                placeholder="عنوان البنك">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xxl-5">
+                                                        <div class="form-input mb-3">
+                                                            <label for="accountHolder" class="mb-1"><span>اسم صاحب
+                                                                    الحساب</span></label>
+                                                            <input type="text" id="accountHolder"
+                                                                class="form-control form-control-sm"
+                                                                placeholder="صاحب الحساب">
+                                                        </div>
+                                                        <div class="form-input mb-3">
+                                                            <label for="accountHolderAddress" class="mb-1"><span>اسم
+                                                                    صاحب
+                                                                    الحساب</span></label>
+                                                            <input type="text" id="accountHolderAddress"
+                                                                class="form-control form-control-sm"
+                                                                placeholder="صاحب الحساب">
+                                                        </div>
+                                                        <div class="form-input mb-3">
+                                                            <label for="swiftCode" class="mb-1"><span>swift
+                                                                    كود</span></label>
+                                                            <input type="text" id="swiftCode"
+                                                                class="form-control form-control-sm"
+                                                                placeholder="swift كود">
+                                                        </div>
+                                                        <div class="form-input mb-3">
+                                                            <label for="IBAN" class="mb-1"><span>IBAN</span></label>
+                                                            <input type="text" id="IBAN"
+                                                                class="form-control form-control-sm"
+                                                                placeholder="IBAN كود">
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-between">
+
+                                                            <button id="prev-btn" class="tap-btn">عودة</button>
+                                                            <button id="next-btn" class="tap-btn">التالي</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-verification tap d-none disabled-icon mt-5 pb-5">
+
+                                                <h2 class="fw-bold fs-4 mb-4">5 - تحقق من الهاتف</h2>
+
+                                                <div class="row justify-content-between">
+                                                    <div class="col-xxl-5 mb-4">
+                                                        <p class="mb-0 fs-6 phone-ver-ms">سوف نرسل لك رسالة نصية تحتوي
+                                                            على رمز إلى رقم الهاتف المحمول أدناه.
+                                                        </p>
+                                                        <p class="mb-0 fs-6 phone-ver-ms">يرجى التأكيد لإرسال رمز
+                                                            التحقق.
+                                                        </p>
+                                                        <p class="mb-0 fs-6 phone-ver-ms mb-5"> Yيمكنك تعديل الرقم قبل
+                                                            التأكيد.
+                                                        </p>
+
+                                                        <div class="form-input">
+                                                            <label for="phoneNumber" class="mb-1"><span>رقم
+                                                                    الهاتف</span></label>
+                                                            <div class="d-flex gap-1 justify-content-between">
+                                                                <div class="form-input phone-num-sle">
+                                                                    <select id="rateSelect"
+                                                                        class="form-select form-select-sm fw-bold">
+                                                                        <option value="+965">+965</option>
+                                                                        <option value="+963">+963</option>
+                                                                        <option value="+966">+966</option>
+                                                                        <option value="+971">+971</option>
+                                                                        <option value="+962">+962</option>
+                                                                        <option value="+964">+964</option>
+                                                                        <option value="+20">+20</option>
+                                                                        <option value="+961">+961</option>
+                                                                        <option value="+973">+973</option>
+                                                                        <option value="+968">+968</option>
+                                                                        <option value="+972">+972</option>
+                                                                        <option value="+90">+90</option>
+                                                                        <option value="+91">+91</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="phone-num">
+                                                                    <input type="text" id="phoneNumber"
+                                                                        class="form-control form-control-sm"
+                                                                        placeholder="0000 0000"
+                                                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="col-xxl-5 d-flex align-items-end justify-content-between">
+                                                        <button id="prev-btn" class="tap-btn">عودة</button>
+                                                        <button id="next-btn" class="tap-btn">تأكيد</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="UserProfileManager p-4 mb-3 mt-3 mt-xxl-5 m-auto">
+                                            <h4 class="fw-bold mb-3 ">عدل ملفك الشخصي</h4>
+
+                                            <p class="percentage"> ( <span class="progres">0%</span> قوة الملف الشخصي)
+                                            </p>
+                                            <div class="progress mb-3" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 0%"></div>
+                                            </div>
+
+
+                                            <div class="input-groups">
+                                                <!-- Item 1 -->
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="form-check-input mb-1 ms-2" type="checkbox"
+                                                            id="check-registration">
+                                                        <label class="form-check-label " for="check-registration">
+                                                            التسجيل الرسمي
+                                                        </label>
+                                                    </div>
+                                                    <button type="button"
+                                                        class="btn p-0 border-0 bg-transparent icon-btn">
+                                                        <img src="./img/Iconly-Light-Edit.svg"
+                                                            alt="Edit Official Registration">
+                                                    </button>
+                                                </div>
+
+                                                <!-- Item 2 -->
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="form-check-input mb-1 ms-2" type="checkbox"
+                                                            id="check-hiring" disabled>
+                                                        <label class="form-check-label " for="check-hiring">
+                                                            توظيف
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" disabled
+                                                        class="btn p-0 border-0 bg-transparent icon-btn disabled-icon">
+                                                        <img src="./img/Iconly-Light-Edit.svg"
+                                                            alt="Edit Hiring (disabled)">
+                                                    </button>
+                                                </div>
+
+                                                <!-- Item 3 -->
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="form-check-input mb-1 ms-2" type="checkbox"
+                                                            id="check-profile" disabled>
+                                                        <label class="form-check-label " for="check-profile">
+                                                            الملف الشخصي
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" disabled
+                                                        class="btn p-0 border-0 bg-transparent icon-btn disabled-icon">
+                                                        <img src="./img/Iconly-Light-Edit.svg"
+                                                            alt="Edit Profile (disabled)">
+                                                    </button>
+                                                </div>
+
+                                                <!-- Item 4 -->
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="form-check-input mb-1 ms-2" type="checkbox"
+                                                            id="check-id" disabled>
+                                                        <label class="form-check-label " for="check-id">
+                                                            تحقق من الهوية
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" disabled
+                                                        class="btn p-0 border-0 bg-transparent icon-btn disabled-icon">
+                                                        <img src="./img/Iconly-Light-Edit.svg"
+                                                            alt="Edit Verification Of ID (disabled)">
+                                                    </button>
+                                                </div>
+
+                                                <!-- Item 5 -->
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="form-check-input mb-1 ms-2" type="checkbox"
+                                                            id="check-mobile" disabled>
+                                                        <label class="form-check-label " for="check-mobile">
+                                                            تحقق من الهاتف المحمول
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" disabled
+                                                        class="btn p-0 border-0 bg-transparent icon-btn disabled-icon">
+                                                        <img src="./img/Iconly-Light-Edit.svg"
+                                                            alt="Edit Mobile Verification (disabled)">
+                                                    </button>
+                                                </div>
+
+                                                <!-- Item 6 -->
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="form-check-input mb-1 ms-2" type="checkbox"
+                                                            id="check-admin" disabled>
+                                                        <label class="form-check-label " for="check-admin">
+                                                            تحقق من المشرف
+                                                        </label>
+                                                    </div>
+                                                    <button type="button" disabled
+                                                        class="btn p-0 border-0 bg-transparent icon-btn disabled-icon">
+                                                        <img src="./img/Time Circle.svg"
+                                                            alt="Waiting for Admin Verification">
+                                                    </button>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <p style="color: var(--denim-blue);" class="fw-6 p-2">يمكنك الانتقال إلى الخطوة
+                                            التي تريدها عن طريق النقر عليها</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Sidebar-->
+    <button id="openSidebar" class="sidebar-left-open d-xxl-none" aria-controls="sidebar" aria-expanded="false">
+        <i class="fa fa-gear fa-spin"></i>
+    </button>
+
+    <!-- Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay d-none" aria-hidden="true"></div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script type="text/javascript" src="./js/Change-language.js"></script>
+    <script src="./js/sidebar-box.js"></script>
+    <script src="./js/profile.js"></script>
+</body>
+
+</html>

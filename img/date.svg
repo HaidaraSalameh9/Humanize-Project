@@ -1,0 +1,8 @@
+<svg id="date" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_721" data-name="Path 721" d="M0,0H24V24H0Z" fill="none"/>
+  <rect id="Rectangle_102" data-name="Rectangle 102" width="16" height="16" rx="2" transform="translate(4 5)" fill="none" stroke="#92bbd1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <line id="Line_42" data-name="Line 42" y2="4" transform="translate(16 3)" fill="none" stroke="#92bbd1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <line id="Line_43" data-name="Line 43" y2="4" transform="translate(8 3)" fill="none" stroke="#92bbd1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <line id="Line_44" data-name="Line 44" x2="16" transform="translate(4 11)" fill="none" stroke="#92bbd1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <rect id="Rectangle_103" data-name="Rectangle 103" width="2" height="2" transform="translate(8 15)" fill="none" stroke="#92bbd1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+</svg>

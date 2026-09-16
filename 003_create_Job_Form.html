@@ -1,0 +1,746 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> create Job Form</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <!-- ||| -->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://fonts.cdnfonts.com/css/bw-modelica-ss01" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+    <!-- Ion.RangeSlider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ion-rangeslider@2.3.1/css/ion.rangeSlider.min.css" />
+
+    <link href="./css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div id="sidebar" class="custom-sidebar col-3 d-xxl-flex flex-column col-xxl-2 sidebar-box p-0 pb-2">
+                <div class="side-icon text-center pt-3 pb-2">
+                    <img class="" src="./img/Group 144.svg" alt />
+                </div>
+
+
+                <div style="flex: 1" class="w-100 bo-r">
+                    <div class="d-flex flex-column justify-content-between p-4 h-100">
+                        <div>
+                            <div class="detalis d-flex gap-3 align-items-center mb-5">
+                                <div class="img-profile">
+                                    <img src="./img/FairyHubLogo_1.svg" alt />
+                                </div>
+                                <div class="full-name">
+                                    <span class="name d-block text-uppercase">fairy</span>
+                                    <span class="nickname d-block text-uppercase mb-2">hup</span>
+                                    <span class="nickname d-block text-uppercase"><a class="text-primary"
+                                            href="#">company</a></span>
+                                </div>
+                            </div>
+
+                            <ul class="main-navigation">
+                                <li class="nav-item home">
+                                    <a class="d-flex gap-3" href="home.html">
+                                        <span class="icon">
+                                            <img src="./img/Iconly-Light-Home.svg " alt="">
+                                        </span>
+                                        <span class="text">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item profile">
+                                    <a class="d-flex gap-3" href="./profile.html">
+                                        <span class="icon">
+                                            <img src="./img/Profile.svg " alt="" />
+                                        </span>
+                                        <span class="text">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item create active">
+                                    <a class="d-flex gap-3" href="./003_create_Job_Form.html">
+                                        <span class="icon">
+                                            <img src="img/crearte-active.svg" alt="" />
+                                        </span>
+                                        <span class="text">Create</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item jobs-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Work.svg" alt="" />
+                                        </span>
+                                        <span class="text">Jobs History</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item contests-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/contests Hiatory.svg" alt="" />
+                                        </span>
+                                        <span class="text">Contests History</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item requests">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Paper.svg " alt="" />
+                                        </span>
+                                        <span class="text">Requests</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item rooms">
+                                    <a class="d-flex gap-3" href="./room.html">
+                                        <span class="icon">
+                                            <img src="./img/Chat.svg" alt="" />
+                                        </span>
+                                        <span class="text">Rooms</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-footer d-flex justify-content-center flex-column">
+                            <div class="social-links d-flex justify-content-evenly mb-2">
+                                <a href="#" class="social-link facebook mr-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link twitter mr-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <p class="copyright-text text-center">
+                                © Humanize.
+                                <span id="year"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button id="closeSidebar" class="close-sidebar-left mb-3 d-xxl-none">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+            </div>
+
+            <div class="col-12 col-xxl-10 p-0">
+                <!-- Start Navbar -->
+                <div class="navebar d-none d-lg-block pt-2">
+                    <div class="bo-b d-flex justify-content-between align-items-center gap-3">
+                        <h1 class="fs-6">
+                            <div class="search-input">
+                                <input type="text" placeholder="Search ..." />
+                                <span class="icon"><i class="fas fa-search"></i></span>
+                            </div>
+                        </h1>
+                        <ul class="d-flex gap-3 align-items-center">
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li>
+                                <img src="./img/Notification.svg" alt="" />
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <img style="margin-inline-end: 10px" src="./img/night-mode.svg" alt="" />
+
+                                <div style="margin-inline-end: 10px"
+                                    class="switch-color form-check form-switch form-check-reverse">
+                                    <input class="form-check-input theme-toggle" type="checkbox"
+                                        id="switchCheckReverse" />
+                                    <label class="form-check-label" for="switchCheckReverse"></label>
+                                </div>
+
+                                <img src="./img/sun.svg" alt="" />
+                            </li>
+                            <li>
+                                <div class="dropdown-center">
+                                    <button id="languageBtn" class="btn d-flex align-items-center gap-2 dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img id="selectedFlag" src="./img/kuwait.svg" alt="" />
+                                        <span id="selectedLang">عربي</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="en" data-flag="us" href="003_create_Job_Form.html"><span
+                                                    class="fi fi-us"></span> English</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="fr" data-flag="fr" href="#"><span class="fi fi-fr"></span>
+                                                Français</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="de" data-flag="de" href="#"><span class="fi fi-de"></span>
+                                                Deutsch</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="tr" data-flag="tr" href="#"><span class="fi fi-tr"></span>
+                                                Türkçe</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                                data-lang="ar" data-flag="kw" href="./003_create_Job_Form_Arabic.html
+                                                "><img src="./img/kuwait.svg" alt="" />
+                                                عربي
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none p-2">
+                    <div class="container-fluid">
+                        <div style="width: 80%" class="d-flex justify-content-between align-items-center">
+                            <a href="#"> <img src="./img/Notification.svg" alt="" /></a>
+                            <div class="d-flex gap-2">
+                                <img src="./img/night-mode.svg" alt="" />
+
+                                <div style="margin-inline-end: 10px"
+                                    class="switch-color form-check form-switch form-check-reverse">
+                                    <input class="form-check-input theme-toggle" type="checkbox"
+                                        id="switchCheckReverse" />
+                                    <label class="form-check-label" for="switchCheckReverse"></label>
+                                </div>
+
+                                <img src="./img/sun.svg" alt="" />
+                            </div>
+                            <div class="dropdown-center">
+                                <button id="languageBtn" class="btn d-flex align-items-center gap-2 dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img id="selectedFlag" src="./img/kuwait.svg" alt="" />
+                                    <span id="selectedLang">عربي</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="en" data-flag="us" href="home.html"><span
+                                                class="fi fi-us"></span> English</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="fr" data-flag="fr" href="#"><span class="fi fi-fr"></span>
+                                            Français</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="de" data-flag="de" href="#"><span class="fi fi-de"></span>
+                                            Deutsch</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="tr" data-flag="tr" href="#"><span class="fi fi-tr"></span>
+                                            Türkçe</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-item d-flex align-items-center gap-2"
+                                            data-lang="ar" data-flag="kw" href="./arabic-home.html"><img
+                                                src="./img/kuwait.svg" alt="" />
+                                            عربي
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-flex justify-content-between mb-1">
+                                    <a href="#">How It Works</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Privacy</a>
+                                    <a href="#">Contact</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <h1 class="fs-6">
+                                        <div class="search-input">
+                                            <input type="text" placeholder="Search ..." />
+                                            <span class="icon"><i class="fas fa-search"></i></span>
+                                        </div>
+                                    </h1>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Navbar -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-xl-12  col-xxl-11 pt-4 p-xxl-2 pb-2">
+                                <div class="job-request w-75 m-auto">
+                                    <div class="form-section mt-4 mb-4">
+
+
+                                    </div>
+
+                                    <h3 class="fw-bold">Create a New Job</h3>
+                                    <form class="mb-4" action="#">
+                                        <div class="row justify-content-between">
+                                            <div class="col-xl-5 mb-3">
+                                                <div class="form-input mb-3">
+                                                    <label for="nameFilter" class="mb-1">
+                                                        <span>Project Name
+                                                        </span>
+                                                        <span class="ms-3"><img src="./img/star.svg" alt=""></span>
+                                                    </label>
+                                                    <input type="text" id="nameFilter"
+                                                        class="form-control form-control-sm"
+                                                        placeholder="Write Your name">
+                                                </div>
+
+                                                <div class="form-input mb-3">
+                                                    <label for="nameFilter" class="mb-1">
+                                                        <span>
+                                                            Brief About The Project
+                                                        </span>
+                                                        <span class="ms-3"><img src="./img/star.svg" alt=""></span>
+                                                    </label>
+
+                                                    <textarea class="form-control" rows="3"
+                                                        placeholder="Briefly describe the project scope, goals, and key deliverables..."></textarea>
+                                                </div>
+
+                                                <div class="form-input mb-3">
+                                                    <div class="d-flex gap-1 justify-content-between">
+                                                        <div class="form-input choose ">
+                                                            <label for="nameFilter" class="mb-1">
+                                                                <span>
+                                                                    Select Date
+                                                                </span>
+                                                            </label>
+                                                            <div class="date-input-wrapper">
+                                                                <input type="text" id="selectDate" class="date-input"
+                                                                    placeholder="Select a date" />
+                                                                <i class="fas fa-calendar-alt calendar-icon"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-input choose">
+                                                            <label for="nameFilter" class="mb-1">
+                                                                <span>
+                                                                    Select Time
+                                                                </span>
+                                                            </label>
+                                                            <div class="time-input-wrapper">
+                                                                <input type="text" id="selectTime" class="time-input"
+                                                                    placeholder="Select a time" />
+                                                                <img class="clock-icon " src="./img/Polygon 7.svg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-input mb-3">
+                                                    <div class="d-flex gap-1 justify-content-between">
+
+                                                        <div class="form-input choose">
+                                                            <label for="nameFilter" class="mb-1">
+                                                                <span>
+                                                                    Number Of People
+                                                                </span>
+                                                            </label>
+                                                            <select id="rateSelect"
+                                                                class="form-select form-select-sm fw-bold">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-input choose">
+                                                            <label for="nameFilter" class="mb-1">
+                                                                <span>
+                                                                    Number Of Hours
+                                                                </span>
+                                                            </label>
+                                                            <select id="rateSelect"
+                                                                class="form-select form-select-sm fw-bold">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-input">
+                                                    <label for="nameFilter" class="mb-1">
+                                                        <span>
+                                                            Do You Want To Hide This Job Posting From Wall?
+                                                        </span>
+                                                        <span class="ms-3"><img src="./img/star.svg" alt=""></span>
+                                                    </label>
+
+                                                    <div class="d-flex gap-4">
+                                                        <div class="form-check d-flex align-items-center  gap-2">
+                                                            <input type="radio" name="hide" id="hideYes" value="true" />
+                                                            <label for="hideYes">Yes</label>
+                                                        </div>
+                                                        <div class="form-check d-flex align-items-center gap-2">
+                                                            <input type="radio" name="hide" id="hideNo" value="false"
+                                                                checked />
+                                                            <label for="hideNo">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-5">
+
+                                                <div class="row file-carde d-flex justify-content-between p-3 mb-3">
+                                                    <div
+                                                        class=" col-sm-4 one d-flex justify-content-between flex-column mb-3 mb-sm-0">
+                                                        <div
+                                                            class="file-icone d-flex align-items-center justify-content-center mb-2">
+                                                            <img src="./img/Document-1.svg" alt="file icon"
+                                                                id="filePreviewe">
+                                                        </div>
+                                                        <div>
+                                                            <input type="file" id="fileInpute" accept="image/*">
+                                                            <div class="d-flex justify-content-center"
+                                                                onclick="document.getElementById('fileInpute').click()">
+                                                                <label
+                                                                    class="upload-btn-2 d-flex align-items-center justify-content-center gap-2">
+                                                                    <img src="./img/Upload-2.svg" alt="">
+                                                                    <span> Upload</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class=" col-sm-7 filee-details d-flex justify-content-between flex-column">
+                                                        <div class="mb-3">
+                                                            <h4>Upload Company</h4>
+                                                            <h4 class="mb-2">License Copy</h4>
+                                                            <p class="filenames" id="filenames">No file chosen
+                                                            </p>
+                                                        </div>
+                                                        <div class="filee-actions">
+                                                            <button class="view-btns" id="viewBtne" onclick="viewFile()"
+                                                                disabled=""><img src="./img/Show.svg" alt="">
+                                                                View</button>
+                                                            <button class="delete-btns" id="deleteBtne"
+                                                                onclick="deleteFile()" disabled=""><img
+                                                                    src="./img/Delete.svg" alt="">
+                                                                Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-input one mb-3">
+                                                    <label for="nameFilter" class="mb-1">
+                                                        <span>
+                                                            What Areas Would You Like The Talent
+                                                            To Participate In ?
+                                                        </span>
+                                                        <span class="ms-3"><img src="./img/star.svg" alt=""></span>
+                                                    </label>
+                                                    <div class="form-check one">
+                                                        <input class="form-check-input" type="checkbox">
+                                                        <label class="form-check-label ms-2">Select all</label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <span class="tag">Collection</span>
+                                                        <span class="tag">Dancing</span>
+                                                        <span class="tag">Fashion</span>
+                                                        <span class="tag">Swimming Suits</span>
+                                                        <span class="tag">Hands</span>
+                                                        <span class="tag">Photos</span>
+                                                        <span class="tag">Shoes</span>
+                                                        <span class="tag">Sport</span>
+                                                    </div>
+
+                                                </div>
+                                                <div id="filemodale" class="modale">
+                                                    <span class="close" onclick="closemodale()">&times;</span>
+                                                    <img class="modale-content" id="modaleImage" />
+                                                </div>
+
+                                                <div class="form-input two mb-3">
+                                                    <label for="nameFilter" class="mb-1">
+                                                        <span>
+                                                            How Will The Talent Appear In The Project?
+                                                        </span>
+                                                        <span class="ms-3"><img src="./img/star.svg" alt=""></span>
+                                                    </label>
+
+                                                    <div class="form-check two">
+                                                        <input class="form-check-input" type="checkbox">
+                                                        <label class="form-check-label ms-2">Select all</label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <span class="tag">Full Length</span>
+                                                        <span class="tag">Hands</span>
+                                                        <span class="tag">Headshot</span>
+                                                        <span class="tag">Hands</span>
+                                                        <span class="tag">Waist-Up</span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-input">
+                                                    <label for="Project-budget" class="mb-1 d-block">
+                                                        <span>Project Budget
+                                                        </span>
+                                                        <span class="ms-3"><img src="./img/star.svg" alt=""></span>
+                                                    </label>
+                                                    <!-- Range Silder -->
+                                                    <input type="text" id="range_01" data-plugin="range-slider" />
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                    <h3 class="fw-bold">Share</h3>
+                                    <hr>
+
+                                    <div
+                                        class="d-flex flex-column flex-lg-row justify-content-between flex-wrap gap-2 mb-4">
+
+                                        <div class="form-check d-flex align-items-center gap-2">
+                                            <input type="radio" name="hide" id="postWall" value="post_wall">
+                                            <label for="postWall">Post On Wall</label>
+                                        </div>
+
+
+                                        <div class="form-check d-flex align-items-center gap-2">
+                                            <input type="radio" name="hide" id="privateInvite" value="private_invite"
+                                                checked>
+                                            <label for="privateInvite">Send A Private Invite To A Specific
+                                                Talent</label>
+                                        </div>
+
+
+                                        <div class="form-check d-flex align-items-center gap-2">
+                                            <input type="radio" name="hide" id="postAndInvite" value="post_and_invite">
+                                            <label for="postAndInvite">Post On The Wall And Send It To A Specific
+                                                Talent</label>
+                                        </div>
+                                    </div>
+
+
+                                    <p class="mb-3" style="color: var(--sky-blue);">Select The Specific Human From The
+                                        Below List To
+                                        Send The Request</p>
+
+                                    <div
+                                        class="filters d-flex  align-items-center gap-3 justify-content-between flex-wrap mb-4">
+
+                                        <div class="align-self-end d-flex align-items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14">
+                                                <path id="Path_4722" data-name="Path 4722"
+                                                    d="M5.484,5H18.178a.989.989,0,0,1,.6.627,1.021,1.021,0,0,1-.115.873L13.784,12v7L9.878,16V12L5,6.5a1.021,1.021,0,0,1-.115-.873A.989.989,0,0,1,5.484,5"
+                                                    transform="translate(-4.831 -5)" fill="#0d2229" />
+                                            </svg>
+                                            <span class="filter-label fw-bold">Filter By:</span>
+                                        </div>
+
+                                        <div class="form-group" style="flex: 1 1 284px; max-width: 391px;">
+                                            <label for="nameFilter" class="mb-1">Name</label>
+                                            <input type="text" id="nameFilter" class="form-control form-control-sm"
+                                                placeholder="Filter by name">
+                                        </div>
+
+                                        <div class="form-group cre">
+                                            <label for="genderSelect" class="mb-1">Gender</label>
+                                            <select id="genderSelect" class="form-select form-select-sm fw-bold">
+
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group cre">
+                                            <label for="rateSelect" class="mb-1">Age</label>
+                                            <select id="age" class="form-select form-select-sm fw-bold">
+
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <br class="mb-1">
+                                            <button class="btn fw-bold text-white">Apply Filters</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="row specific-human d-flex gap-3 justify-content-center justify-content-md-between mb-4">
+                                    </div>
+
+                                    <h3 class="fw-bold">Final Price</h3>
+                                    <hr>
+                                    <div class="row mb-4 mt-3 ">
+                                        <div
+                                            class="final-price col-10 col-lg-9 col-xxl-8 d-flex justify-content-between flex-column flex-md-row ">
+                                            <div class="d-flex flex-column mb-3">
+                                                <h5 class="fw-normal" style="color: var(--denim-blue);">
+                                                    <img src="./img/Ellipse 117.svg" alt="">
+                                                    <span class="ms-2">
+                                                        Total Amount To Pay For Submitting Job
+                                                    </span>
+
+                                                </h5>
+
+                                                <h5 class="fw-normal" style="color: var(--denim-blue);">
+                                                    <img src="./img/Ellipse 117.svg" alt="">
+                                                    <span class="ms-2">
+                                                        Serice Fee (10%)
+                                                    </span>
+
+                                                </h5>
+
+                                                <h5 class="fw-normal" style="color: var(--denim-blue);">
+                                                    <img src="./img/Ellipse 117.svg" alt="">
+                                                    <span class="ms-2">
+                                                        Job Price
+                                                    </span>
+
+                                                </h5>
+
+                                            </div>
+
+
+                                            <div>
+                                                <h5 class="fw-bold" style="color: var( --denim-blue);">120.00 KD</h5>
+                                                <h5 class="fw-bold" style="color: var( --raspberry-red);">12.00 kD</h5>
+                                                <h5 class="fw-bold" style="color: var(--emerald-green);">108.00 KD</h5>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                    <h3 class="fw-bold">Payment Method</h3>
+                                    <hr>
+
+                                    <div class="form-input cre mb-4">
+                                        <div class="form-check mb-3">
+                                            <label class="d-flex align-items-center gap-3" for="payment-hideNo-1">
+                                                <input type="radio" name="hide" id="payment-hideNo-1" value="false"
+                                                    checked>
+                                                <img src="./img/knet-logo-2360944FA2-seeklogo.com.png" alt="sample">
+                                                <h6 class="mb-0">Knet</h6>
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center gap-2">
+                                            <label class="d-flex align-items-center gap-3" for="payment-hideYes-2">
+                                                <input type="radio" name="hide" id="payment-hideYes-2" value="true">
+                                                <img src="./img/2560px-Mastercard_2019_logo.svg.png" alt="sample">
+                                                <h6 class="mb-0">Credit-Card</h6>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check d-flex align-items-center gap-3 mb-4">
+                                        <input class="form-check-input d-block" type="checkbox" id="agreeTerms">
+                                        <label class="form-check-label d-block" for="agreeTerms">
+                                            I agree to the Terms and Conditions, and to pay the total contest amount to
+                                            publish the contest
+                                        </label>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-xl-5"></div>
+                                        <div class="col-xl-5 d-flex align-items-end justify-content-between">
+                                            <div class="creat-btn-job cancel text-center">Cancel</div>
+                                            <div class="creat-btn-job pay text-center">Pay</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-2 d-none d-xl-block col-xxl-2  p-4 pb-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Sidebar-->
+    <button id="openSidebar" class="sidebar-left-open d-xxl-none" aria-controls="sidebar" aria-expanded="false">
+        <i class="fa fa-gear fa-spin"></i>
+    </button>
+
+    <!-- Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay d-none" aria-hidden="true"></div>
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="text/javascript" src="./js/Change-language.js"></script>
+    <script type="text/javascript" src="./js/sidebar-box.js"></script>
+    <!-- jQuery (مطلوب لـ Ion.RangeSlider) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ion.RangeSlider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/ion-rangeslider@2.3.1/js/ion.rangeSlider.min.js"></script>
+
+
+    <script type="text/javascript" src="./js/003_create_Job_Form.js"></script>
+</body>
+
+</html>

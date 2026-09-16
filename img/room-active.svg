@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.681" height="21.665" viewBox="0 0 21.681 21.665">
+  <g id="room-active" transform="translate(0.931 0.75)">
+    <g id="Chat">
+      <path id="Stroke_4" data-name="Stroke 4" d="M17.071,17.057a10.012,10.012,0,0,1-11.285,2,4.05,4.05,0,0,0-1.421-.4c-1.187.007-2.664,1.157-3.432.391s.384-2.245.384-3.438A3.989,3.989,0,0,0,.926,14.2a10,10,0,1,1,16.145,2.855Z" transform="translate(0)" fill="#fff" stroke="#24598c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Stroke_11" data-name="Stroke 11" d="M.5.5H.5" transform="translate(13.444 9.905)" fill="#fff" stroke="#24598c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Stroke_13" data-name="Stroke 13" d="M.5.5H.5" transform="translate(9.435 9.905)" fill="#fff" stroke="#24598c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Stroke_15" data-name="Stroke 15" d="M.5.5H.5" transform="translate(5.426 9.905)" fill="#fff" stroke="#24598c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

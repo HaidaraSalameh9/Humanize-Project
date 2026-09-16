@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="19.5" viewBox="0 0 17.5 19.5">
+  <g id="Delete" transform="translate(0 -0.001)">
+    <path id="Stroke_1" data-name="Stroke 1" d="M13.389,0s-.512,6.553-.81,9.314a2.139,2.139,0,0,1-2.225,2.115c-2.462.046-4.926.049-7.387,0a2.117,2.117,0,0,1-2.16-2.1C.509,6.536,0,0,0,0" transform="translate(2.056 7.287)" fill="none" stroke="#e63f4f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Stroke_3" data-name="Stroke 3" d="M16,.5H0" transform="translate(0.75 3.646)" fill="none" stroke="#e63f4f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Stroke_5" data-name="Stroke 5" d="M9.834,3.395A1.568,1.568,0,0,1,8.31,2.107L8.081.923A1.214,1.214,0,0,0,6.914,0H2.92A1.214,1.214,0,0,0,1.753.923L1.524,2.107A1.568,1.568,0,0,1,0,3.395" transform="translate(3.833 0.751)" fill="none" stroke="#e63f4f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

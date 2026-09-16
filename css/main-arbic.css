@@ -1,0 +1,42 @@
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+#modalImage {
+    inset-inline-start: auto;
+    inset-inline-end: 50%;
+}
+
+.image-modal span {
+    inset-inline-end: auto;
+    inset-inline-start: 5%;
+}
+
+
+.form-check .form-check-input {
+    float: right !important;
+}
+
+.form-check .form-check-input.talnt {
+    float: left !important;
+}
+
+
+.form-select {
+    background-position: left .75rem center;
+}
+
+.form-select.talnt {
+    background-position: right .75rem center;
+}
+
+ol, ul {
+    padding-right: 0;
+}
+
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+    margin-left: -12px;
+}

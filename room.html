@@ -1,0 +1,403 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <!-- ||| -->
+    <link href="https://fonts.cdnfonts.com/css/bw-modelica-ss01" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+    <link href="./css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div id="sidebar" class="custom-sidebar col-3 d-xxl-flex flex-column col-xxl-2 sidebar-box p-0 pb-2">
+                <div class="side-icon text-center pt-3 pb-2">
+                    <img class="" src="./img/Group 144.svg" alt />
+                </div>
+
+
+                <div style="flex: 1" class="w-100 bo-r">
+                    <div class="d-flex flex-column justify-content-between p-4 h-100">
+                        <div>
+                            <div class="detalis d-flex gap-3 align-items-center mb-5">
+                                <div class="img-profile">
+                                    <img src="./img/FairyHubLogo_1.svg" alt />
+                                </div>
+                                <div class="full-name">
+                                    <span class="name d-block text-uppercase">fairy</span>
+                                    <span class="nickname d-block text-uppercase mb-2">hup</span>
+                                    <span class="nickname d-block text-uppercase"><a class="text-primary"
+                                            href="#">company</a></span>
+                                </div>
+                            </div>
+
+                            <ul class="main-navigation">
+                                <li class="nav-item home ">
+                                    <a class="d-flex gap-3" href="home.html">
+                                        <span class="icon">
+                                            <img src="./img/Iconly-Light-Home.svg " alt="">
+                                        </span>
+                                        <span class="text">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item profile">
+                                    <a class="d-flex gap-3" href="./profile.html">
+                                        <span class="icon">
+                                            <img src="./img/Profile.svg " alt="">
+                                        </span>
+                                        <span class="text">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item create">
+                                    <a class="d-flex gap-3" href="./003_create_Job_Form.html">
+                                        <span class="icon">
+                                            <img src="./img/Plus.svg " alt="">
+                                        </span>
+                                        <span class="text">Create</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item jobs-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Work.svg" alt="">
+                                        </span>
+                                        <span class="text">Jobs History</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item contests-history">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/contests Hiatory.svg" alt="">
+                                        </span>
+                                        <span class="text">Contests History</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item requests">
+                                    <a class="d-flex gap-3" href="#">
+                                        <span class="icon">
+                                            <img src="./img/Paper.svg " alt="">
+                                        </span>
+                                        <span class="text">Requests</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item rooms active">
+                                    <a class="d-flex gap-3" href="./room.html">
+                                        <span class="icon">
+                                            <img src="./img/room-active.svg" alt="">
+                                        </span>
+                                        <span class="text">Rooms</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-footer d-flex justify-content-center flex-column">
+                            <div class="social-links d-flex justify-content-evenly mb-2">
+                                <a href="#" class="social-link facebook mr-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link twitter mr-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <p class="copyright-text text-center">
+                                © Humanize.
+                                <span id="year"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button id="closeSidebar" class="close-sidebar-left mb-3 d-xxl-none">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+            </div>
+
+
+            <div class="col-12 col-xxl-10 p-0">
+                <!-- Start Navbar -->
+                <div class="navebar d-none d-lg-block">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div style="flex: 1;"
+                                class="col-12 col-xxl-8 pb-2 pt-2 bo-b d-flex justify-content-between align-items-center gap-3">
+                                <h1 class="fs-6">
+                                    <div class="search-input">
+                                        <input type="text" placeholder="Search ..." />
+                                        <span class="icon"><i class="fas fa-search"></i></span>
+                                    </div>
+                                </h1>
+                                <ul class="d-flex gap-3 align-items-center">
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li>
+                                        <img src="./img/Notification.svg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-three d-none d-xxl-block col-3 col-xxl-2 pb-2 pt-2 "></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none p-2 ">
+                    <div class="container-fluid">
+                        <div style="width: 80%;" class=" d-flex justify-content-between align-items-center ">
+                            <a href="#"> <img src="./img/Notification.svg" alt=""></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                        </button>
+
+
+
+                        <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-flex justify-content-between mb-1">
+                                    <a href="#">How It Works</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Privacy</a>
+                                    <a href="#">Contact</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <h1 class="fs-6">
+                                        <div class="search-input">
+                                            <input type="text" placeholder="Search ..." />
+                                            <span class="icon"><i class="fas fa-search"></i></span>
+                                        </div>
+                                    </h1>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Navbar -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div style="flex: 1;" class="col-12 col-xxl-8 rooms">
+                                <div class="row ">
+                                    <div style="flex: 1;" class="col-5 col-xl-4 p-0  bo-r">
+                                        <div class="roomList">
+                                            <div class="m-3 mt-4 ">
+                                                <h2 class="fs-3 fw-bold">Available Rooms</h2>
+                                                <p class="fs-6">click on the room to access the chat</p>
+                                            </div>
+                                            <div class="search-input chat m-3">
+                                                <input class="w-100" type="text" placeholder="Search In Rooms..." />
+                                                <span class="icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                            <p id="noResults" class="text-muted text-center mt-3"
+                                                style="display: none;">No
+                                                results found</p>
+                                            <div class=" mt-4 chat-rooms chat-contener">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversations col-7 col-xl-8  d-flex flex-column">
+                                        <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
+                                            <div class="d-flex gap-4 align-items-center">
+                                                <button class="close-conversations d-md-none" data-bs-toggle="tooltip"
+                                                    data-bs-placement="bottom" data-bs-title="Go Back">
+                                                    <i class="fas fa-arrow-left"></i>
+                                                </button>
+
+                                                <h4 class="fw-bold mb-2">Dress Model</h4>
+                                            </div>
+                                            <div class="d-flex gap-4 align-items-center">
+                                                <div class="profile-img imge-profile">
+                                                    <img class="img-fluid" alt="KS">
+
+                                                </div>
+                                                <div class="toggle" id="toggleBtn" data-bs-toggle="tooltip"
+                                                    data-bs-placement="bottom" data-bs-title="Account Information">
+                                                    <span></span><span></span><span></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row bo-b mb-4"></div>
+                                        <div class="d-flex flex-column justify-content-between flex-grow-1">
+                                            <section id="chatMessages" class="chat-messages">
+                                                <div class="message message-received">Hello Kathryn!</div>
+                                                <div class="message message-received"> quis nostrud exercitation ullamco
+                                                    laboris
+                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                    nulla pariatur.
+                                                    Excepteur sint occaecat
+                                                    cupidatat non proident
+                                                </div>
+                                                <div class="message message-sent">Hi! How are you?</div>
+                                                <div class="message message-sent">dvg</div>
+                                            </section>
+                                            <div>
+                                                <div class="row bo-b mb-4"></div>
+                                                <div class="form-input mb-3 position-relative">
+                                                    <textarea id="messageInput" class="form-control address chat"
+                                                        rows="3" placeholder="Type a message"></textarea>
+                                                    <div
+                                                        class="icons-chat d-flex justify-content-between align-items-center ">
+                                                        <div class="d-flex gap-3 ">
+                                                            <a href=" #"><img src="./img/gallery.svg" alt=""></a>
+                                                            <a href="#"><img src="./img/Group 427.svg" alt=""></a>
+                                                            <a href="#"><img src="./img/Emoji icon.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div id="sendBtn" class="send-btn cursor"><img
+                                                                src="./img/send-icon.svg" alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sidebar-two" class="sidebar col-xxl-2 col-3 bo-l">
+                                <button class="close-btn-room" id="close-info"><i
+                                        class="fas fa-arrow-left"></i></button>
+                                <div>
+                                    <div class="d-flex justify-content-center w-100 mt-3 mb-4">
+                                        <h3 class="fs-6 fw-bold ">Humanize Chat Room</h3>
+                                    </div>
+                                    <div class="w-100 d-flex flex-column align-items-center mb-5">
+                                        <div class="profile-img imge-profile mb-3">
+                                            <img class="img-fluid" alt="KS">
+                                        </div>
+                                        <h3 class="name-profile text-center">Kathryn Smith</h3>
+                                    </div>
+                                    <div class="row bo-b mb-5"></div>
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button d-flex align-items-center gap-2 p-0"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseOne">
+                                                    <img src="./img/job2.svg" alt="Job Icon"
+                                                        style="width: 24px; height: 24px;" />
+                                                    <h6 class="fw-6 mb-0">Room Job</h6>
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                                <div class="accordion-body p-0 d-flex align-items-center gap-3">
+                                                    <h5 class="fw-bold" style="opacity: 0;">ff</h5>
+                                                    <h6 class="fw-bold mb-0" style="font-size: 14px !important;"
+                                                        id="room-job">Dress
+                                                        Model
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 style="color: var(--sky-blue) !important;" class="accordion-header">
+                                                <button
+                                                    class="p-0 accordion-button collapsed d-flex align-items-center gap-2"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseTwo">
+                                                    <h1><img src="./img/member.svg" alt=""></h1>
+                                                    <h6 class="fw-6">Room Creator</h6>
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                                <div class="accordion-body  p-0 d-flex align-items-center gap-3">
+                                                    <img class="mb-1" src="./img/FairyHub.png" alt="sample">
+                                                    <h6 style="font-size: 14px !important;" class="fw-6 fw-bold mb-0">
+                                                        Fairy Hub</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed d-flex align-items-center gap-2 p-0"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseThree">
+                                                    <h1><img src="./img/date.svg" alt=""></h1>
+                                                    <h6 class="fw-6">Creation Date</h6>
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                                <div class="accordion-body p-0 d-flex align-items-center gap-3">
+                                                    <h5 style="opacity: 0;" class="fw-6 fw-bold">ff</h5>
+                                                    <h6 style="font-size: 14px !important;" class="fw-6 fw-bold "
+                                                        id="creation-date">
+                                                        Oct. 31, 2021
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed d-flex align-items-center gap-2 p-0"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFour">
+                                                    <span><img src="./img/members.svg" alt=""></span>
+                                                    <h6 class="fw-6">Members</h6>
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                                <div class="accordion-body p-0 d-flex gap-2 flex-column">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/FairyHub.png" alt="sample">
+                                                        <h6 class="fw-6 fw-bold">Fairy Hub</h6>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div style="width: 32px; height: 32px;"
+                                                            class="profile-img imge-profile">
+                                                            <img style="width: 32px; height: 32px;" class="img-fluid"
+                                                                alt="KS">
+                                                        </div>
+                                                        <h6 style="font-size: 14px !important;" class="name-profile">
+                                                            Kathryn Smith
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="overlay" class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Sidebar-->
+    <button id="openSidebar" class="sidebar-left-open d-xxl-none" aria-controls="sidebar" aria-expanded="false">
+        <i class="fa fa-gear fa-spin"></i>
+    </button>
+
+    <!-- Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay d-none" aria-hidden="true"></div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/sidebar-box.js"></script>
+    <script type="text/javascript" src="./js/room.js"></script>
+</body>
+
+</html>
